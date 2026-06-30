@@ -2628,6 +2628,19 @@
         "rotationCenterY": 44
     },
     {
+        "name": "Frozen Dango Cat",
+        "tags": [
+            "food",
+            "animals"
+        ],
+        "assetId": "94283f241fa71e9bce6995401fa546f5",
+        "bitmapResolution": 1,
+        "dataFormat": "svg",
+        "md5ext": "94283f241fa71e9bce6995401fa546f5.svg",
+        "rotationCenterX": 44,
+        "rotationCenterY": 44
+    },
+    {
         "name": "Dani-a",
         "tags": [
             "people"

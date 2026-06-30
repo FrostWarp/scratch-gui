@@ -137,10 +137,18 @@ class LibraryItem extends React.PureComponent {
         return iconMd5Prop;
     }
     render () {
+        const nocdn_img = [
+            "94283f241fa71e9bce6995401fa546f5.svg"
+        ];
         const iconMd5 = this.curIconMd5();
-        const iconURL = iconMd5 ?
+        let iconURL;
+        if (nocdn_img.find(f => f.includes(iconMd5))) {
+            iconURL = `fb-library/${nocdn_img.find(f => f.includes(iconMd5))}`
+        } else {
+            iconURL = iconMd5 ?
             `https://cdn.assets.scratch.mit.edu/internalapi/asset/${iconMd5}/get/` :
             this.props.iconRawURL;
+        }
         return (
             <LibraryItemComponent
                 intl={this.props.intl}
