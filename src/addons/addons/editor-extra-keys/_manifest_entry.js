@@ -23,7 +23,7 @@ const manifest = {
     },
     {
       "type": "warning",
-      "text": "The \FrostWarp keys\" will only work in TurboWarp, not in Scratch.",
+      "text": "The \TurboWarp keys\" will only work in TurboWarp and mods derived off of it, not in Scratch.",
       "id": "twKeysWarn"
     }
   ],

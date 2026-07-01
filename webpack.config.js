@@ -225,6 +225,13 @@ module.exports = [
                 title: `${APP_NAME} Credits`,
                 ...htmlWebpackPluginCommon
             }),
+            new HtmlWebpackPlugin({
+                chunks: ['creditstw'],
+                template: 'src/playground/simple.ejs',
+                filename: 'credits-tw.html',
+                title: `TurboWarp Credits`,
+                ...htmlWebpackPluginCommon
+            }),
             new CopyWebpackPlugin({
                 patterns: [
                     {

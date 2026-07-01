@@ -63,6 +63,12 @@ const contributors = [
     }
 ].map(fromHardcoded);
 
+const contributorsFW = [
+    {
+        username: 'aaeusimon'
+    }
+].map(fromHardcoded);
+
 const addonDevelopers = [
     {
         userID: '34018398',
@@ -382,8 +388,9 @@ const docs = [
 ].map(fromHardcoded);
 
 export default {
-    contributors: shuffle(contributors),
-    addonDevelopers: shuffle(addonDevelopers),
-    extensionDevelopers: shuffle(extensionDevelopers),
-    docs: shuffle(docs)
+    contributors: shuffle(contributorsFW),
+    contributorsTW: shuffle(contributors),
+    addonDevelopersTW: shuffle(addonDevelopers),
+    extensionDevelopersTW: shuffle(extensionDevelopers),
+    docsTW: shuffle(docs)
 };
